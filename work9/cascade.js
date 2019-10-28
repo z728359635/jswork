@@ -17,7 +17,6 @@ collegeSelect.onchange=function(){
     majorSelect.options.length=0
     createOption(majorSelect,majors[collegeSelect.value])
 }
-var cclassSelect=document.getElementById('classSelect')
 majorSelect.onchange=function(){
    classSelect.options.length=0
    createOption(classSelect, classes[collegeSelect.value][majorSelect.value])
