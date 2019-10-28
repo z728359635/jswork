@@ -1,8 +1,24 @@
-function createOption(obj,data){
-    for (var i in data){
-        var op = new Option(data[i],i);
+function createOption(obj,date){
+    for (var i in date){
+        var op=new Option(date[i],i);
         obj.options.add(op);
     }
 }
-var province = document.getElementById('province');
-createOption(province,provinceArr);
+var collegeSelect=document.getElementById('collegeSelect');
+createOption(collegeSelect, colleges)
+
+var majorSelect=document.getElementById('majorSelect')
+collegeSelect.onchange=function(){
+    majorSelect.options.length=0
+    createOption(majorSelect,majors[collegeSelect.value])
+}
+var classSelect=document.getElementById('classSelect')
+collegeSelect.onchange=function(){
+    majorSelect.options.length=0
+    createOption(majorSelect,majors[collegeSelect.value])
+}
+var cclassSelect=document.getElementById('classSelect')
+majorSelect.onchange=function(){
+   classSelect.options.length=0
+   createOption(classSelect, classes[collegeSelect.value][majorSelect.value])
+}
