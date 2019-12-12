@@ -5,7 +5,7 @@ $('smallBox').onmouseover = function() {
     $('mask').style.display = 'block';
     $('bigBox').style.display = 'block';
 };
-$('smallBox').onmouseover = function() {
+$('smallBox').onmouseout = function() {
     $('mask').style.display = 'none';
     $('bigBox').style.display = 'none';
 };
