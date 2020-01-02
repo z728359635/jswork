@@ -1,7 +1,6 @@
 .title{
     text-align: center;
 }
-
 .banner{
     position: relative;
     overflow: hidden;
@@ -9,23 +8,19 @@
     width: 958px;
     height: 400px;
 }
-
 .banner ul{
     margin: 0;
-    padding: 0;
+    padding:0;
     list-style: none;
 }
-
 .hot{
     position: absolute;
-    top: 0;
+    top:0;
     left: 0;
 }
-
-.hot li {
+.hot li{
     float: left;
 }
-
 .dot{
     position: absolute;
     bottom: 10px;
@@ -33,8 +28,7 @@
     text-align: center;
     font-size: 0;
 }
-
-.dot li {
+.dot li{
     display: block;
     display: inline-block;
     margin: 0 5px;
@@ -44,15 +38,12 @@
     background: rgba(145,144,144, .5);
     cursor: pointer;
 }
-
 .dot .on{
     background-color: #fff;
 }
-
-.arrow {
+.arrow{
     display: none;
 }
-
 .arrow span{
     display: block;
     width: 50px;
@@ -61,21 +52,18 @@
     color: #fff;
     text-align: center;
     font-size: 40px;
-    line-height: 100ox;
+    line-height: 100px;
     cursor: pointer;
 }
-
 .arrow .prev{
     position: absolute;
     top: 50%;
     left: 0;
     margin-top: -50px;
 }
-
 .arrow .next{
     position: absolute;
-    top: 50px;
+    top: 50%;
     right: 0;
     margin-top: -50px;
 }
-  
